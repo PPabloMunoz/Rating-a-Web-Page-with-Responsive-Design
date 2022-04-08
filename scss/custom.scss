@@ -1,0 +1,112 @@
+// scss-docs-start
+
+$custom-colors: ("texto": rgb(138, 138, 138), );
+
+
+$primary: #1f2630; //Gradient
+$secondary: #37414e; //Fondo Estrella
+$danger: #191f27; //Grandient
+$info: #fc7613; //Submit
+$dark: #141519; //Fondo
+
+$theme-colors: ("primary": $primary, "danger": $danger, "secondary": $secondary, "info": $info, "dark": $dark);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-family-sans-serif:'Overpass',
+sans-serif;
+
+
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+a:link,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+
+a .attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    max-width: 400px;
+    width: fit-content;
+
+}
+
+
+.card,
+.tarjeta {
+    background: linear-gradient(0deg, hsl(213, 19%, 18%) 100%, hsl(216, 12%, 8%) 100%);
+    min-width: 400px;
+    min-height: 400px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.parrafo {
+    font-size: 13px;
+}
+
+section img {
+    width: 38px;
+}
+
+
+
+.buttons .btn {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    color: rgb(138, 138, 138);
+}
+
+.buttons .btn:hover {
+    background-color: $info;
+    color: #fff;
+}
+
+.buttons .btn:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+}
+
+
+
+
+.submit {
+    letter-spacing: 1px;
+    background-color: $info;
+    color: #fff;
+}
+
+.submit:hover {
+    // font-weight: 400;
+    background-color: #fff;
+    border-color: #fff;
+    color: $info;
+}
+
+// Segunda Hoja
+
+.nota {
+    color: $info;
+    font-size: 11px;
+    background-color: $secondary;
+
+}
